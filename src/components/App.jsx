@@ -1,3 +1,7 @@
+import { Contacts } from "./contacts/contacts";
+import { FindFilt } from "./filter/findFiltr";
+import { Form } from "./formAddContact/form";
+
 export const App = () => {
   return (
     <div
@@ -7,10 +11,13 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
+        flexDirection: "column",
       }}
     >
-      React homework template
+      <Form/>
+      <FindFilt/>
+      <Contacts/>
     </div>
   );
 };
